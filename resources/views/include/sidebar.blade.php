@@ -33,7 +33,18 @@
             </ul>
         </li>
 
-        <li><a href="typography.html"><i class="zmdi zmdi-format-underlined"></i> Typography</a></li>
+        
+
+        <li class="navigation__sub navigation__sub--{{ active(['pekerjaan.index']) }}">
+            <a href=""><i class="zmdi zmdi-format-underlined"></i> Data Master</a>
+
+            <ul>
+                <li class="navigation__{{ active(['pekerjaan.index']) }}"><a href="{{ route('pekerjaan.index') }}">Pekerjaan</a></li>
+                <li class="navigation__{{ active(['agama.index']) }}"><a href="{{ route('agama.index') }}">Agama</a></li>
+                <li class="navigation__{{ active(['pendidikan.index']) }}"><a href="{{ route('pendidikan.index') }}">Pendidikan</a></li>
+                <li class="navigation__{{ active(['keluarga.index']) }}"><a href="{{ route('keluarga.index') }}">Hubungan Keluarga</a></li>
+            </ul>
+        </li>
 
         <li><a href="widgets.html"><i class="zmdi zmdi-widgets"></i> Widgets</a></li>
 

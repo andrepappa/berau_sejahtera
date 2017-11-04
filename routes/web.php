@@ -38,4 +38,9 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/hak_akses/{hak_akses}/edit','Admin\HakAksesController@edit')->name('hak_akses.edit');
 	Route::post('/hak_akses/{hak_akses}','Admin\HakAksesController@update')->name('hak_akses.update');
 	Route::get('/hak_akses/delete','Admin\HakAksesController@delete')->name('hak_akses.delete');
+
+	Route::get('/pekerjaan','DataMaster\PekerjaanController@index')->name('pekerjaan.index');
+	Route::get('/agama','DataMaster\AgamaController@index')->name('agama.index');
+	Route::get('/pendidikan','DataMaster\PendidikanController@index')->name('pendidikan.index');
+	Route::get('/keluarga','DataMaster\KeluargaController@index')->name('keluarga.index');
 });
